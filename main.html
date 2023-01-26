@@ -6,9 +6,40 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body><!-- Create the input fields for item name and price -->
+<label>Item Name: <input type="text" id="item-name-input"></label>
+<label>Item Price: <input type="number" id="item-price-input"></label>
+
+<!-- Create the Add button -->
+<button id="add">Add</button>
+
+<!-- Create the table for displaying the shopping list -->
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody id="shopping-list">
+    <tr>
+      <td>Grand Total</td>
+      <td id="total">0</td>
+    </tr>
+  </tbody>
+</table>
+
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
+    <script type="text/javascript" src="./script.js">// Get references to the input fields and the Add button
+let itemNameInput = document.getElementById("item-name-input");
+let itemPriceInput = document.getElementById("item-price-input");
+let addButton = document.getElementById("add");
+
+// Get a reference to the shopping list table body
+let shoppingList = document.getElementById("shopping-list");
+
+// Get a reference to the grand total
+
 </script>
 
 </body>
